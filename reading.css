@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+:root {
+  --paper: #ecece4;
+  --ink: #1c2621;
+  --muted: #46564d;
+  --rule: #85958a;
+  --gutter: clamp(20px, 4.45vw, 64px);
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+body { margin: 0 auto; max-width: 1440px; padding: 0 var(--gutter) 44px; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.skip { position: absolute; top: 8px; left: var(--gutter); background: var(--paper); padding: 8px; }
+.skip:not(:focus) { clip-path: inset(50%); }
+.masthead { display: flex; align-items: center; gap: 24px; border-bottom: 1px solid var(--rule); min-height: 88px; }
+.brand { font-family: Archivo, sans-serif; font-size: 22px; font-weight: 800; text-decoration: none; }
+.identity { font-size: 14px; }
+.desktop-nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; }
+.desktop-nav a, .mobile-nav a { text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.mobile-nav, .mobile-caption { display: none; }
+.intro { padding: 60px 0 70px; }
+.eyebrow { color: var(--muted); font-size: 15px; margin-bottom: 24px; }
+h1, h2, p, figure { margin: 0; }
+h1, h2 { font-family: "Space Grotesk", sans-serif; font-weight: 700; }
+h1 { font-size: clamp(36px, 4.5vw, 68px); line-height: 1.07; }
+h2 { font-size: clamp(24px, 2.35vw, 36px); line-height: 1.15; scroll-margin-top: 20px; }
+p { line-height: 1.5; }
+.reading-row { display: grid; gap: 24px; border-top: 1px solid var(--rule); padding: 25px 0 42px; }
+.service-row { grid-template-columns: 54px minmax(0, 1fr) minmax(0, 1.15fr); min-height: 225px; }
+.service-row p, .study-summary { font-size: 20px; }
+.number, .method, figcaption { color: var(--muted); }
+.service-row .method { margin-top: 40px; font-size: 17px; }
+.return-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; width: min(100%, 345px); min-height: 44px; border-bottom: 1px solid var(--rule); text-decoration: none; font-size: 16px; }
+.project-reading .intro { padding-bottom: 48px; }
+.project-lead { display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr); gap: 24px 52px; margin-bottom: 72px; }
+.project-lead figure { display: contents; }
+.project-lead img { grid-area: 1 / 1; display: block; width: 100%; height: auto; }
+.design-intent { grid-area: 1 / 2; }
+.design-intent h2, .project-row h2 { font-size: clamp(23px, 2vw, 30px); }
+.design-intent p { margin-top: 24px; }
+.desktop-caption { display: block; }
+.project-lead figcaption { grid-area: 1 / 2; align-self: end; padding-bottom: 14px; font-size: 14px; line-height: 1.5; }
+.study-summary { grid-area: 2 / 1; }
+.project-row { grid-template-columns: minmax(0, .6fr) minmax(0, 1fr); }
+.project-reading .return-link { background: var(--ink); color: var(--paper); padding: 0 16px; width: min(100%, 265px); margin-top: 30px; }
+@media (max-width: 1000px) {
+  .identity, .desktop-nav { display: none; }
+  .masthead { min-height: 70px; justify-content: space-between; position: relative; }
+  .mobile-nav { display: block; }
+  .mobile-nav summary { cursor: pointer; padding: 12px 0; }
+  .mobile-nav nav { position: absolute; top: 100%; right: 0; z-index: 1; background: var(--paper); border: 1px solid var(--rule); padding: 8px 16px; }
+  .mobile-nav nav a { display: block; padding: 10px; }
+  .project-lead { display: block; }
+  .project-lead figure { display: block; }
+  .project-lead figcaption { padding: 16px 0 0; }
+  .desktop-caption { display: none; }
+  .mobile-caption { display: inline; }
+  .study-summary { margin-top: 22px; }
+  .design-intent { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--rule); }
+}
+@media (max-width: 640px) {
+  :root { --gutter: 20px; }
+  .brand { font-size: 19px; }
+  .intro { padding: 48px 0 36px; }
+  .intro h1 span { display: block; }
+  .eyebrow { font-size: 13px; margin-bottom: 20px; }
+  .reading-row { grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 24px 0 35px; min-height: 0; }
+  .number { font-size: 14px; }
+  .service-row p, .study-summary { font-size: 16px; }
+  .service-row .method { font-size: 15px; font-weight: 400; margin-top: 18px; }
+  .return-link, .project-reading .return-link { width: 100%; }
+  .project-reading .intro { padding-bottom: 22px; }
+  .project-lead img { width: calc(100% + 2 * var(--gutter)); max-width: none; margin-inline: calc(-1 * var(--gutter)); }
+  .project-lead { margin-bottom: 30px; }
+  .design-intent p { margin-top: 12px; }
+}

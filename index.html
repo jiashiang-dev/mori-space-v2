@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MORI SPACE is an independent interior design studio concept."
+    />
+    <meta name="theme-color" content="#18211c" />
+    <title>MORI SPACE &mdash; Interior Renovation &amp; Bespoke Furniture</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="assets/mori-hero-poster.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&amp;family=Inter:wght@400;500&amp;family=Space+Grotesk:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=20260831-hero-media" />
+    <link rel='stylesheet' href='homepage.css'>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="/interactions.css">
+    <script type="module" src="/interactions.js"></script>
+  </head>
+
+  <body class="v2-home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="MORI SPACE home">
+          <span class="brand-name">MORI SPACE</span>
+        </a>
+
+        <span class="v2-identity">Interior design studio concept</span>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="menu-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+
+        <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+          <a class="nav-link is-active" href="#top" aria-current="page">Home</a>
+          <a class="nav-link" href="#philosophy">Philosophy</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#furniture">Furniture</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="v2-hero-stage">
+      <section class="hero video-hero hero-type-static" id="top" aria-labelledby="hero-title">
+        <div class="v2-hero-media">
+        <img
+          class="hero-image hero-poster"
+          src="assets/mori-hero-poster.jpg"
+          alt=""
+          fetchpriority="high"
+          width="1920"
+          height="1080"
+        />
+        <video
+          class="hero-video"
+          data-hero-video
+          data-src="%BASE_URL%videos/mori-hero-walkthrough.mp4"
+          data-fps="24"
+          poster="assets/mori-hero-poster.jpg"
+          preload="none"
+          muted
+          playsinline
+          webkit-playsinline
+          disablepictureinpicture
+          disableremoteplayback
+          controlslist="nodownload nofullscreen noremoteplayback"
+          aria-hidden="true"
+          tabindex="-1"
+          width="1920"
+          height="1080"
+        ></video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-shell">
+          <a class="v2-action v2-watch-film" href="%BASE_URL%videos/mori-hero-walkthrough.mp4" data-watch-film>Watch Full Film <span aria-hidden="true">&#8594;</span></a>
+          <p class="v2-film-note v2-desktop">Original opening-door film / 12.04s</p>
+          <h1 class="hero-title" id="hero-title" data-hero-title><span>Spaces Made</span><span>to Feel Like<br class="v2-hero-mobile-break"> Home.</span></h1>
+          <div class="v2-hero-support" data-hero-support>
+            <p class="v2-desktop">Thoughtful interiors and enduring furniture, designed as one complete experience.</p>
+            <p class="v2-mobile">Interiors and furniture,<br>designed as one.</p>
+          </div>
+          <p class="hero-kicker v2-desktop">Interior Renovation / Bespoke Furniture</p>
+          <div class="hero-actions">
+            <a class="v2-action v2-hero-primary" href="#projects">View Projects <span aria-hidden="true">→</span></a>
+            <a class="v2-action" href="#furniture">Explore Furniture <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="v2-hero-disclosure v2-desktop">MORI SPACE is an independent interior design studio concept. The work shown explores spatial ideas and is not presented as completed client commissions.</p>
+        </div>
+      </section>
+      </div>
+
+
+      <section class="v2-philosophy" id="philosophy" aria-labelledby="philosophy-title">
+        <p class="v2-label v2-gutter"><span class="v2-desktop">01 / </span>Philosophy</p>
+        <figure>
+          <img src="assets/mori-n01-philosophy.png" width="1536" height="1024" alt="Daylight and shadow along a concrete passage" loading="lazy" decoding="async">
+          <figcaption class="v2-philosophy-copy v2-gutter">
+            <h2 id="philosophy-title">SPACE <span>SHAPES LIFE.</span></h2>
+            <p class="v2-desktop">We design spaces that balance functionality, materiality and everyday life, creating calm environments that feel natural and lasting.</p>
+            <p class="v2-mobile">Function, material and everyday life, in balance.</p>
+            <p class="v2-desktop v2-note">N01 / Provisional AI image study<br>Independent conceptual image.<br>Separate from the Hero film.</p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="v2-projects" id="projects" aria-labelledby="projects-title">
+        <div class="v2-project-heading v2-gutter">
+          <div class="v2-mobile v2-project-mast"><span>MORI SPACE</span><span>01</span></div>
+          <p class="v2-label">Selected Projects <span class="v2-desktop">01</span></p>
+          <h2 id="projects-title">Warm Minimal <span>Living Study</span></h2>
+          <p class="v2-project-type">Concept Project /<br>Spatial Design Study</p>
+        </div>
+        <div class="v2-project-body">
+          <span class="v2-desktop v2-project-mark" aria-hidden="true">MORI<br>SPACE</span>
+          <img src="assets/warm-minimal-living-study-c23.png" width="1800" height="1350" alt="Sunlit living room with seating around a round table" loading="lazy" decoding="async">
+          <div class="v2-project-caption">
+            <p>A study of daylight, seating relationships and the objects of everyday life.</p>
+            <a class="v2-action" id="entry-living-study" data-reading-entry href="./projects/warm-minimal-living-study/">View Project <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="v2-services v2-gutter" id="services" aria-labelledby="services-title">
+        <p class="v2-label v2-desktop">03 / Services</p>
+        <h2 id="services-title"><span class="v2-desktop">Five disciplines.<br>One space.</span><span class="v2-mobile">Services.</span></h2>
+        <ol class="v2-service-rail">
+          <li><a id="entry-interior-renovation" data-reading-entry href="./services/#interior-renovation"><span class="v2-index" aria-hidden="true">01</span><span><strong>Interior Renovation</strong><span class="v2-desktop v2-service-detail" aria-hidden="true">Read service</span></span><span class="v2-desktop v2-service-arrow" aria-hidden="true">→</span></a></li>
+          <li><a id="entry-space-planning" data-reading-entry href="./services/#space-planning"><span class="v2-index" aria-hidden="true">02</span><span><strong>Space Planning</strong><span class="v2-desktop v2-service-detail" aria-hidden="true">Read service</span></span><span class="v2-desktop v2-service-arrow" aria-hidden="true">→</span></a></li>
+          <li><a id="entry-bespoke-furniture" data-reading-entry href="./services/#bespoke-furniture"><span class="v2-index" aria-hidden="true">03</span><span><strong>Bespoke Furniture</strong><span class="v2-desktop v2-service-detail" aria-hidden="true">Read service</span></span><span class="v2-desktop v2-service-arrow" aria-hidden="true">→</span></a></li>
+          <li><a id="entry-residential-interiors" data-reading-entry href="./services/#residential-interiors"><span class="v2-index" aria-hidden="true">04</span><span><strong>Residential Interiors</strong><span class="v2-desktop v2-service-detail" aria-hidden="true">Read service</span></span><span class="v2-desktop v2-service-arrow" aria-hidden="true">→</span></a></li>
+          <li><a id="entry-commercial-spaces" data-reading-entry href="./services/#commercial-spaces"><span class="v2-index" aria-hidden="true">05</span><span><strong>Commercial Spaces</strong><span class="v2-desktop v2-service-detail" aria-hidden="true">Read service</span></span><span class="v2-desktop v2-service-arrow" aria-hidden="true">→</span></a></li>
+        </ol>
+        <div class="v2-desktop v2-service-footer">
+          <a class="v2-action" id="entry-services" data-reading-entry href="./services/">All service details <span aria-hidden="true">→</span></a>
+          <p>A quiet index first. Full descriptions and methods in the reading view.</p>
+        </div>
+      </section>
+
+      <section class="v2-furniture" id="furniture" aria-labelledby="furniture-title">
+        <div class="v2-dark v2-furniture-intro">
+          <header class="v2-furniture-heading v2-gutter">
+            <p class="v2-label"><span class="v2-desktop">04 / Furniture within Space</span><span class="v2-mobile">Furniture</span></p>
+            <h2 id="furniture-title"><span class="v2-desktop">Furniture<br>within Space</span><span class="v2-mobile">Objects<br>in relation.</span></h2>
+            <p class="v2-desktop v2-furniture-aside">Objects in relation.<br>Body. Edge. Movement.</p>
+          </header>
+          <figure>
+            <img src="assets/mori-n03-furniture.png" width="1536" height="1024" alt="Chair and low cabinet beside a wall patterned with daylight" loading="lazy" decoding="async">
+            <figcaption class="v2-desktop v2-note v2-gutter">N03 / Provisional AI conceptual image. Separate study; not the named Signature Pieces.</figcaption>
+          </figure>
+          <div class="v2-desktop v2-furniture-notes v2-gutter">
+            <div><p class="v2-label">01 / Body &amp; form</p><h3>A place to pause.</h3></div>
+            <div><p class="v2-label">02 / Edge &amp; wall</p><h3>Furniture holds a line.</h3></div>
+            <div><p class="v2-label">03 / Space between</p><h3>Room for movement.</h3></div>
+            <a class="v2-action" href="#furniture-studies">Explore furniture studies <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="v2-furniture-studies v2-gutter" id="furniture-studies" tabindex="-1">
+          <p class="v2-label v2-desktop">SPACES / FIVE ORIGINAL CATEGORIES</p>
+          <h3>Explore by space.</h3>
+          <ul class="v2-static-list" aria-label="Furniture categories">
+            <li><strong>Living Room</strong><p class="v2-desktop">How do seating, daylight and circulation meet?</p></li>
+            <li><strong>Dining</strong><p class="v2-desktop">How does a table gather people within a room?</p></li>
+            <li><strong>Bedroom</strong><p class="v2-desktop">How can furniture support rest and daily rituals?</p></li>
+            <li><strong>Home Office</strong><p class="v2-desktop">How do focus and everyday living share space?</p></li>
+            <li><strong>Lounge</strong><p class="v2-desktop">How can a place invite a longer pause?</p></li>
+          </ul>
+          <div id="signature">
+            <p class="v2-label v2-desktop">PIECES / INDEPENDENT FURNITURE STUDIES</p>
+            <h3>Signature Pieces</h3>
+            <p class="v2-mobile v2-note">Independent concept studies</p>
+            <ul class="v2-static-list v2-signature" aria-label="Signature Pieces">
+              <li><strong>Sculpted Lounge Sofa</strong><div class="v2-desktop"><p class="v2-note">Proposed Material Direction</p><p>Soft-touch upholstery · Solid timber frame</p></div></li>
+              <li><strong>Solid Wood Dining Table</strong><div class="v2-desktop"><p class="v2-note">Proposed Material Direction</p><p>Natural oak · Hand-finished joinery</p></div></li>
+              <li><strong>Accent Lounge Chair</strong><div class="v2-desktop"><p class="v2-note">Proposed Material Direction</p><p>Textured fabric · Sculpted profile</p></div></li>
+              <li><strong>Bespoke Sideboard</strong><div class="v2-desktop"><p class="v2-note">Proposed Material Direction</p><p>Dark stone · Custom architectural detailing</p></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="v2-approach v2-gutter" id="about" aria-labelledby="approach-title">
+        <h2 class="v2-label" id="approach-title"><span class="v2-desktop">05 / Approach</span><span class="v2-mobile">Approach.</span></h2>
+        <ol>
+          <li><span class="v2-index v2-desktop" aria-hidden="true">01</span><h3>Observe.</h3><p class="v2-desktop">Read light, movement and everyday rituals.</p><p class="v2-mobile">Read light and daily rituals.</p></li>
+          <li><span class="v2-index v2-desktop" aria-hidden="true">02</span><h3>Compose.</h3><p class="v2-desktop">Bring material, proportion and objects into relation.</p><p class="v2-mobile">Bring material and form together.</p></li>
+          <li><span class="v2-index v2-desktop" aria-hidden="true">03</span><h3>Refine.</h3><p class="v2-desktop">Test the idea for clarity and human use.</p><p class="v2-mobile">Test for clarity and human use.</p></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer v2-dark v2-closing v2-gutter" id="contact" aria-labelledby="contact-title">
+      <p class="v2-label v2-desktop">06 / Contact</p>
+      <h2 id="contact-title">BEGIN A<br>CONVERSATION.</h2>
+      <div class="v2-closing-content">
+        <div>
+          <p class="v2-contact-label">Contact MORI</p>
+          <p class="v2-contact-address">hello@moristudio.example</p>
+        </div>
+        <p class="v2-desktop">MORI SPACE is an independent interior design studio concept. The work shown explores spatial ideas and is not presented as completed client commissions.</p>
+        <p class="v2-mobile">Independent interior design<br>studio concept.</p>
+      </div>
+      <div class="v2-closing-end">
+        <span class="v2-wordmark">MORI SPACE</span>
+        <a class="v2-action" href="#top">Back to top <span aria-hidden="true">→</span></a>
+      </div>
+    </footer>
+    <dialog class="v2-modal v2-film-dialog" data-film aria-label="Watch Full Film">
+      <button type="button" data-dismiss autofocus>Close</button>
+      <video controls playsinline preload="none" aria-label="MORI SPACE original opening-door film" tabindex="0"></video>
+      <p data-film-fallback hidden>The film could not load. <a href="%BASE_URL%videos/mori-hero-walkthrough.mp4">Open the original film</a>.</p>
+    </dialog>
+  </body>
+</html>

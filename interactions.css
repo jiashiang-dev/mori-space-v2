@@ -1,0 +1,66 @@
+/* Shared interaction styles for the three static documents. */
+html.v2-modal-open { overflow: hidden; overscroll-behavior: none; }
+.v2-modal {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border: 0;
+  overscroll-behavior: contain;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+}
+.v2-modal::backdrop { background: #18211c; }
+.v2-modal :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.v2-focus-guard { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); }
+.v2-modal button, .v2-reading-menu-button {
+  min-height: 48px;
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.v2-menu-dialog { padding: 20px; background: #eeede7; color: #18211c; overflow: auto; }
+.v2-menu-dialog header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
+.v2-menu-dialog header strong { font: 800 20px Archivo, sans-serif; }
+.v2-menu-dialog nav a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+  border-top: 1px solid #9ba79d;
+  color: inherit;
+  text-decoration: none;
+  font: 700 25px "Space Grotesk", sans-serif;
+}
+.v2-menu-dialog nav a:hover { text-decoration: underline; }
+.v2-menu-dialog p { margin: 42px 0 12px; max-width: 330px; line-height: 1.5; }
+.v2-film-dialog { background: #101612; color: #f7f8f2; padding: 12px 24px 24px; overflow: auto; }
+.v2-film-dialog[open] { display: grid; grid-template-rows: auto 1fr auto; align-items: center; }
+.v2-film-dialog button { justify-self: end; }
+.v2-film-dialog video { display: block; width: min(100%, calc(max(130px, 100dvh - 120px) * 16 / 9)); aspect-ratio: 16 / 9; object-fit: contain; margin: auto; background: #000; }
+.v2-film-dialog p { text-align: center; }
+.v2-film-dialog a { color: inherit; }
+.v2-home .v2-watch-film { grid-column: 1; grid-row: 1; min-height: 32px; }
+.v2-reading-menu-button { display: none; }
+.mobile-nav[hidden] { display: none !important; }
+@media (max-width: 900px) {
+  .v2-reading-menu-button { display: block; margin-left: auto; }
+  .v2-home .v2-watch-film { grid-area: auto; min-height: 48px; width: 100%; }
+  .v2-home .v2-watch-film { background: #f7f8f2; color: #18211c; padding-inline: 16px; }
+  .v2-home .v2-watch-film:focus-visible { outline-color: #f7f8f2; }
+}
+@media (max-width: 1000px) {
+  .no-js .masthead { flex-wrap: wrap; }
+  .no-js .mobile-nav { width: 100%; }
+  .no-js .mobile-nav summary { display: none; }
+  .no-js .mobile-nav nav { position: static; border: 0; display: flex; flex-wrap: wrap; padding: 0; }
+}
+@media (min-width: 901px) and (max-width: 1000px) {
+  .js .masthead .desktop-nav { display: flex; }
+}
