@@ -1,0 +1,4 @@
+@font-face { font-family: "Mori Furniture Preview Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("./latin-modern-roman.otf") format("opentype"); }
+@font-face { font-family: "Mori Furniture Preview Display"; font-style: italic; font-weight: 400; font-display: swap; src: url("./latin-modern-italic.otf") format("opentype"); }
+#furniture-studies[data-mori-furniture-preview] { padding: 0; }
+#furniture-studies[data-mori-furniture-preview] > #signature[data-preview-pieces] { padding: 0; }

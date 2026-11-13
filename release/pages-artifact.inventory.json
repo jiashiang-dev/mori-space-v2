@@ -1,0 +1,193 @@
+{
+  "schema": "mori-pages-artifact/v1",
+  "repository": "jiashiang-dev/mori-space-v2",
+  "origin": "https://jiashiang-dev.github.io",
+  "basePath": "/mori-space-v2/",
+  "entry": "index.html",
+  "fileCount": 36,
+  "totalBytes": 34658049,
+  "treeSha256": "d300e34ff6fd9668a2b5ce6a3e6d5e4bf453929c0e3b942b174661901f093113",
+  "treeEncoding": "UTF-8, sorted POSIX path, one path<TAB>bytes<TAB>sha256<LF> record per file",
+  "files": [
+    {
+      "path": "assets/home-CPaypo3V.js",
+      "bytes": 390082,
+      "sha256": "8a421da7ee5633353aa035d3c85b04730701d91838bcbe2f378d74ce12e9a9a3"
+    },
+    {
+      "path": "assets/home-DDrbAoOR.css",
+      "bytes": 75786,
+      "sha256": "6769400edfad1453d6eb38f3360e572b7cf2acf8c44f96b25f045c7405507b24"
+    },
+    {
+      "path": "assets/interactions-BCOjK3i1.css",
+      "bytes": 2246,
+      "sha256": "6a7001f24dad983c57851c959ddff9b49498270d844cab718b7fd155a60c4e5f"
+    },
+    {
+      "path": "assets/interactions-Gi6W_1a-.js",
+      "bytes": 7451,
+      "sha256": "94de809bf9b4c2790d521921fd4013055e27bd2cbb58693a6fa1f65e2aae0b5d"
+    },
+    {
+      "path": "assets/mori-hero-poster-BC5iec9u.jpg",
+      "bytes": 290462,
+      "sha256": "dfe49be0d90fc7370b4a52133098e8fee2da297d87d8e09985744019035e688f"
+    },
+    {
+      "path": "assets/mori-n01-philosophy-H0D2x9tM.png",
+      "bytes": 2691084,
+      "sha256": "20f649b5e4cb14363473114e478764fa7914bd80e196476f0658fa62cbb51f59"
+    },
+    {
+      "path": "assets/mori-n03-furniture-C99IHwBO.png",
+      "bytes": 2166482,
+      "sha256": "2cf4b6d90ff55e124143649804b6e532356a424f707bbbf945a04ed21efa240e"
+    },
+    {
+      "path": "assets/reading-BPYvChFr.css",
+      "bytes": 3797,
+      "sha256": "85e844c22fe98a2d77da24197c2e36689ccaed68c0b93064c7abe2f6f2eddc2b"
+    },
+    {
+      "path": "assets/warm-minimal-living-study-c23-DeBpakXU.png",
+      "bytes": 2467047,
+      "sha256": "1e358b10e95cd0b3799dd367ca6fac123208c1edcbf457e6f21fbaa9102927f7"
+    },
+    {
+      "path": "furniture-preview/bedroom.webp",
+      "bytes": 138108,
+      "sha256": "5fdb207177ce9107571b2751bf3c5e922b27b38e66b30eed025a2f913325f8ec"
+    },
+    {
+      "path": "furniture-preview/deck.js",
+      "bytes": 7445,
+      "sha256": "98427ee6ae4cfad5c15207acd4dee7952986b0817b84ffd1a8b5adc7900f9bd8"
+    },
+    {
+      "path": "furniture-preview/dining-table.webp",
+      "bytes": 117358,
+      "sha256": "8e24c755728fc64c08046ff3092ef2ba36d0a3b8eb8045d4b69fb96e3e8d5a21"
+    },
+    {
+      "path": "furniture-preview/dining.webp",
+      "bytes": 115590,
+      "sha256": "46e3a5a0aff8a33004394fbfef5642e1c3c5c677b1759a2100a98fc32dcffaa9"
+    },
+    {
+      "path": "furniture-preview/font-license.txt",
+      "bytes": 7376,
+      "sha256": "7aa5bb48eb081adeba771988bc57a939154a6dd890d12e4b3242f81feced0faa"
+    },
+    {
+      "path": "furniture-preview/home-office.webp",
+      "bytes": 121114,
+      "sha256": "f35c4ecbfa6cab7cf23d9f5c7aa004772e0c5f9300fcf719fc73d008a63c07d3"
+    },
+    {
+      "path": "furniture-preview/latin-modern-italic.otf",
+      "bytes": 117732,
+      "sha256": "ada6b3f451238784e5a5ea75d43efa1eb4329cd75ce65bf047ed2f31b7b5e2f3"
+    },
+    {
+      "path": "furniture-preview/latin-modern-roman.otf",
+      "bytes": 110248,
+      "sha256": "ed048c80fb4b67663b80899b89fe5fba17d7442e1286d61fd08fe5689c6b7c3c"
+    },
+    {
+      "path": "furniture-preview/living-room.webp",
+      "bytes": 207968,
+      "sha256": "02a44ae4a4323c503c7dd19a8350b1e041f7488d9f0cf16bcd6ca3b138405fc0"
+    },
+    {
+      "path": "furniture-preview/lounge-chair.webp",
+      "bytes": 117972,
+      "sha256": "8d7692f0d1abef4ebb4a76d54c845fedc07e15332669a51cbc122e63b23a737e"
+    },
+    {
+      "path": "furniture-preview/lounge.webp",
+      "bytes": 171580,
+      "sha256": "482e78bb129039279c05badfa60e59aaec1888fe3b78d3248336a163b3bb8db4"
+    },
+    {
+      "path": "furniture-preview/oak-contrast.js",
+      "bytes": 1395,
+      "sha256": "27f800cc7a4f44ad4a93b2d8bcb03b6985fd74443778a2e6d9592fdf795a1ed9"
+    },
+    {
+      "path": "furniture-preview/preview-shell.css",
+      "bytes": 517,
+      "sha256": "ce7f4f6db9c93dc40cbd3714c7104fdec7d8ff75baa9b5f15fd02a188c446d2c"
+    },
+    {
+      "path": "furniture-preview/reference.html",
+      "bytes": 1915020,
+      "sha256": "0b2b8105f8110d4b6f9780a0697e452d3800c3eb8b2cc2f2c76a11388868db29"
+    },
+    {
+      "path": "furniture-preview/sideboard.webp",
+      "bytes": 81904,
+      "sha256": "26ed55dae38ef46cfd081248a542e40cc821c800ccbfe4cf4d03751a7cc9fb3d"
+    },
+    {
+      "path": "furniture-preview/sofa.webp",
+      "bytes": 109122,
+      "sha256": "bb79e8b0d2295829b5159e2b7961d79b449268f3b32cded60f69f9afeb312b6a"
+    },
+    {
+      "path": "furniture-preview/soft-ivory.css",
+      "bytes": 5971,
+      "sha256": "c46095c8495e33cf7a3d986bad8cc511070366bdf146d2a112c1d7643c4c7474"
+    },
+    {
+      "path": "index.html",
+      "bytes": 50442,
+      "sha256": "3c2d9faa504d57bc814f6a7d145908b3192b33ec0691001ab92b8aa55542eaf6"
+    },
+    {
+      "path": "projects/warm-minimal-living-study/index.html",
+      "bytes": 4890,
+      "sha256": "6e3f379dd06139e7f24093d43b4a5b79910ed0a16ebbc6fa6c3cffa71cbec280"
+    },
+    {
+      "path": "service-images/bespoke-furniture.jpg",
+      "bytes": 107140,
+      "sha256": "bd9068a0fa4d00c04b6f091e9427aed74b9263c95ee535e91c2fadf91200966a"
+    },
+    {
+      "path": "service-images/commercial-spaces.jpg",
+      "bytes": 133793,
+      "sha256": "08de271c93a2053057d3312fede35e7b47763d9719e56dd4f24732db5e772da3"
+    },
+    {
+      "path": "service-images/interior-renovation.jpg",
+      "bytes": 271457,
+      "sha256": "0ea85cae0e8230e50036c92df87a663b6b6bbf391d8b8967f180f502805530c0"
+    },
+    {
+      "path": "service-images/residential-interiors.jpg",
+      "bytes": 240092,
+      "sha256": "c41043029e47728b493662860c2bc4affbd40a446968a6fcd7f70fc1e9c62d55"
+    },
+    {
+      "path": "service-images/space-planning.jpg",
+      "bytes": 307759,
+      "sha256": "063f6f021aeed68fabe6d755b46a5349a9c64f0f160ca24f0d6354507b8ddd4c"
+    },
+    {
+      "path": "services/index.html",
+      "bytes": 4288,
+      "sha256": "d6692ea1e6d738730c2327fc00569e26545f0c00a968bc5ae869606ba6383ccb"
+    },
+    {
+      "path": "videos/mori-hero-poster.jpg",
+      "bytes": 290462,
+      "sha256": "dfe49be0d90fc7370b4a52133098e8fee2da297d87d8e09985744019035e688f"
+    },
+    {
+      "path": "videos/mori-hero-walkthrough.mp4",
+      "bytes": 21806869,
+      "sha256": "029435d864ee7157afab665a3a3c0ec09ebc78ea93a12a20174d376cd49b9c94"
+    }
+  ]
+}

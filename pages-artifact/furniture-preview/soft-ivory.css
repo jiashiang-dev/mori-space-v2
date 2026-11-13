@@ -1,0 +1,137 @@
+body.v2-home[data-ivory-preview] {
+  --mori-ivory: #F2EFE9;
+  --mori-sand: #DDD0BA;
+  --mori-oak: #B79B7B;
+  --mori-ink: #211C16;
+  --mori-muted: #3A3026;
+  --mori-accent: #3E3023;
+  --mori-rule: #514A42;
+  --mori-header: #F2EFE9;
+  --mori-hero: #F2EFE9;
+  --mori-hero-action: #B79B7B;
+  --mori-philosophy: #F2EFE9;
+  --mori-projects: #F2EFE9;
+  --mori-services: #DDD0BA;
+  --mori-service-photo: #DDD0BA;
+  --mori-service-detail: #F2EFE9;
+  --mori-furniture: #F2EFE9;
+  --mori-deck-mode: #F2EFE9;
+  --mori-explore: #F2EFE9;
+  --mori-signature: #F2EFE9;
+  --mori-approach: #DDD0BA;
+  --mori-closing: #F2EFE9;
+  --mori-closing-action: #B79B7B;
+}
+/* Colors only. The source preview's layout and behavior stay in its own files. */
+.v2-home[data-ivory-preview] {
+  --v2-paper: var(--mori-ivory);
+  --v2-dark: var(--mori-ink);
+  --v2-muted: var(--mori-muted);
+  --v2-rule: var(--mori-rule);
+  background-color: var(--mori-ivory);
+  color: var(--mori-ink);
+}
+.v2-home[data-ivory-preview] .site-header,
+.v2-home[data-ivory-preview] .site-header.is-scrolled,
+.v2-home[data-ivory-preview] .site-header.menu-active,
+.v2-home[data-ivory-preview] .v2-menu-dialog,
+.v2-home[data-ivory-preview] .v2-menu-dialog::backdrop {
+  background-color: var(--mori-header);
+  color: var(--mori-ink);
+}
+.v2-home[data-ivory-preview] .site-header :is(.brand,.brand-name,.v2-identity,.menu-toggle,.menu-label),
+.v2-home[data-ivory-preview] .primary-navigation .nav-link,
+.v2-home[data-ivory-preview] .primary-navigation .nav-link:is(:hover,:focus-visible,.is-active) {
+  color: var(--mori-ink);
+}
+.v2-home[data-ivory-preview] .v2-menu-dialog nav a { border-top-color: var(--mori-rule); }
+@media (max-width: 900px) {
+  .v2-home[data-ivory-preview] .primary-navigation { background-color: var(--mori-header); }
+}
+.v2-home[data-ivory-preview] .v2-hero-stage { --hero-background: var(--mori-hero); }
+.v2-home[data-ivory-preview] .video-hero,
+.v2-home[data-ivory-preview] .video-hero .hero-title { color: var(--mori-ink); }
+.v2-home[data-ivory-preview] .video-hero .hero-shell {
+  border-left-color: var(--mori-rule);
+  background-color: #DDD0BA;
+}
+.v2-home[data-ivory-preview] .hero-actions .v2-hero-primary {
+  background-color: var(--mori-hero-action);
+  color: var(--mori-ink);
+}
+.v2-home[data-ivory-preview] .hero-actions :is(.v2-hero-primary,.v2-watch-film):focus-visible { outline-color: var(--mori-ink); }
+@media (max-width: 900px) {
+  .v2-home[data-ivory-preview] .hero-actions .v2-watch-film {
+    background-color: var(--mori-ivory);
+    color: var(--mori-ink);
+  }
+}
+.v2-home[data-ivory-preview] #philosophy { background-color: var(--mori-philosophy); }
+.v2-home[data-ivory-preview] #projects { background-color: var(--mori-projects); }
+.v2-home[data-ivory-preview] #services { background-color: var(--mori-services); }
+.v2-home[data-ivory-preview] .v2-furniture-intro { background-color: var(--mori-furniture); color: var(--mori-ink); }
+.v2-home[data-ivory-preview] #about { background-color: var(--mori-approach); }
+.v2-home[data-ivory-preview] .v2-closing { background-color: var(--mori-closing); color: var(--mori-ink); }
+.v2-home[data-ivory-preview] .v2-closing .v2-contact-label {
+  background-color: var(--mori-closing-action);
+  color: var(--mori-ink);
+}
+/* Keep the existing neutral backing and opacity of the animated Services picker. */
+.v2-home[data-ivory-preview] #mori-services-island { background-color: var(--mori-services); }
+.v2-home[data-ivory-preview] #mori-services-island [data-carousel-frame] > :nth-child(2) {
+  background-color: var(--mori-service-photo);
+}
+.v2-home[data-ivory-preview] #mori-services-island #service-details {
+  background-color: var(--mori-service-detail);
+  color: var(--mori-ink);
+}
+.v2-home[data-ivory-preview] #mori-services-island #service-details p { color: var(--mori-ink); }
+.v2-home[data-ivory-preview] #mori-services-island #service-details button {
+  border-color: var(--mori-rule);
+  color: var(--mori-ink);
+}
+.v2-home[data-ivory-preview] #mori-services-island #service-details button:hover {
+  background-color: var(--mori-sand);
+  color: var(--mori-ink);
+}
+.v2-home[data-ivory-preview] #mori-services-island #service-details button:focus-visible { outline-color: var(--mori-ink); }
+
+.v2-home[data-ivory-preview] #mori-services-island [data-carousel-frame] > :first-child {
+  background-color: #B79B7B;
+}
+
+/* Reuse the picker's existing edge layers and directions. */
+.v2-home[data-ivory-preview] #mori-services-island [data-carousel-frame] > :first-child > :is(.bg-gradient-to-b, .bg-gradient-to-t) {
+  --tw-gradient-stops: #B99E7F, rgb(185 158 127 / 0);
+}
+
+/* Keep the original border-color transition independent of Motion's depth opacity. */
+@property --mori-oak-border-alpha {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.2;
+}
+.v2-home[data-ivory-preview] #mori-services-island [data-service-label-list] > :has(> [data-oak-contrast][aria-pressed="false"]) {
+  opacity: 1 !important;
+}
+.v2-home[data-ivory-preview] #mori-services-island [data-oak-contrast][aria-pressed="false"] {
+  border-color: rgb(255 255 255 / calc(var(--mori-oak-motion-opacity) * var(--mori-oak-border-alpha)));
+  transition-property: --mori-oak-border-alpha;
+}
+.v2-home[data-ivory-preview] #mori-services-island [data-oak-contrast][aria-pressed="false"]:hover {
+  --mori-oak-border-alpha: 0.4;
+}
+.v2-home[data-ivory-preview] #mori-services-island [data-oak-contrast][aria-pressed="false"]:focus-visible {
+  outline-color: rgb(255 255 255 / var(--mori-oak-motion-opacity));
+}
+.v2-home[data-ivory-preview] #mori-services-island [data-oak-contrast][aria-pressed="false"] > :is(span, [data-service-icon]) {
+  color: #211C16;
+  opacity: calc(0.82 + 0.18 * var(--mori-oak-motion-opacity));
+}
+
+/* At narrow widths the bottom-anchored caption grows upward as it wraps. */
+@media (max-width: 375px) {
+  .v2-home[data-ivory-preview] #mori-services-island [data-carousel-frame] > :nth-child(2) > div > [aria-hidden] > .top-8.left-8 {
+    top: 18px;
+  }
+}
