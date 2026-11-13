@@ -1212,5 +1212,48 @@ a { color: inherit; }
       <video controls playsinline preload="none" aria-label="MORI SPACE original opening-door film" tabindex="0"></video>
       <p data-film-fallback hidden>The film could not load. <a href="/mori-space-v2/videos/mori-hero-walkthrough.mp4">Open the original film</a>.</p>
     </dialog>
+    <script>
+      (() => {
+        const services = document.getElementById("services");
+        const heroVideo = document.querySelector("[data-hero-video]");
+        const heroWidth = matchMedia("(max-width: 640px)");
+
+        document.addEventListener("click", (event) => {
+          if (!heroWidth.matches || event.defaultPrevented || event.button !== 0 ||
+              event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          const link = event.target.closest?.('.v2-menu-dialog[open] nav a[href="#services"]');
+          if (!link || !services || !heroVideo || heroVideo.hasAttribute("src")) return;
+
+          // The first Hero video refresh can interrupt a smooth fragment scroll.
+          const attempt = new AbortController();
+          const options = { signal: attempt.signal };
+          let ready = false;
+          const finishIfStranded = () => {
+            if (!ready || location.hash !== "#services" ||
+                !services.contains(document.activeElement)) return;
+
+            const { top, bottom } = services.getBoundingClientRect();
+            attempt.abort();
+            if (top >= innerHeight || bottom <= 0) {
+              services.scrollIntoView({ behavior: "instant", block: "start" });
+            }
+          };
+          heroVideo.addEventListener("loadeddata", () => {
+            ready = true;
+          }, { ...options, once: true });
+          document.addEventListener("scrollend", finishIfStranded, options);
+
+          // Cancel when the visitor takes over or the page leaves this navigation.
+          for (const type of ["pointerdown", "touchstart", "wheel", "keydown", "pagehide"]) {
+            window.addEventListener(type, () => attempt.abort(), { ...options, passive: true });
+          }
+          window.addEventListener("hashchange", () => {
+            if (location.hash !== "#services") attempt.abort();
+          }, options);
+          const deadline = setTimeout(() => attempt.abort(), 6000);
+          attempt.signal.addEventListener("abort", () => clearTimeout(deadline), { once: true });
+        }, { capture: true });
+      })();
+    </script>
   </body>
 </html>
