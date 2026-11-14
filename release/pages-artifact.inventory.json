@@ -5,8 +5,8 @@
   "basePath": "/mori-space-v2/",
   "entry": "index.html",
   "fileCount": 36,
-  "totalBytes": 34658049,
-  "treeSha256": "d300e34ff6fd9668a2b5ce6a3e6d5e4bf453929c0e3b942b174661901f093113",
+  "totalBytes": 34659348,
+  "treeSha256": "9cdbcab98823306f728c22977f0cad0b53b7349d5b876279dd0084b0f321cb8b",
   "treeEncoding": "UTF-8, sorted POSIX path, one path<TAB>bytes<TAB>sha256<LF> record per file",
   "files": [
     {
@@ -141,8 +141,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 50442,
-      "sha256": "3c2d9faa504d57bc814f6a7d145908b3192b33ec0691001ab92b8aa55542eaf6"
+      "bytes": 51741,
+      "sha256": "b6d655382d8678392bc3e3ca4577d250b38b2acb8a460a0c367ca549a834af85"
     },
     {
       "path": "projects/warm-minimal-living-study/index.html",

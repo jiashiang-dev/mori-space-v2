@@ -1212,5 +1212,30 @@ a { color: inherit; }
       <video controls playsinline preload="none" aria-label="MORI SPACE original opening-door film" tabindex="0"></video>
       <p data-film-fallback hidden>The film could not load. <a href="/mori-space-v2/videos/mori-hero-walkthrough.mp4">Open the original film</a>.</p>
     </dialog>
+    <script>
+      (() => {
+        const mobileMotion = matchMedia("(max-width: 640px) and (prefers-reduced-motion: no-preference)");
+        const video = document.querySelector("[data-hero-video]");
+
+        // The menu closes at its own click handler before this listener runs.
+        // Crossing the cold Hero smoothly can start a video refresh mid-scroll.
+        window.addEventListener("click", (event) => {
+          if (!mobileMotion.matches || !video || video.hasAttribute("src") ||
+              event.defaultPrevented || event.button !== 0 ||
+              event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+          const link = event.target.closest?.(".v2-menu-dialog nav a[href]");
+          const hash = link?.getAttribute("href");
+          const services = hash === "#services" && document.getElementById("services");
+          const returningHome = hash === "#top" && location.hash === "#services";
+          if (!services && !returningHome) return;
+
+          if (location.hash !== hash) history.pushState(history.state, "", hash);
+          event.preventDefault();
+          if (services) services.scrollIntoView({ behavior: "instant", block: "start" });
+          else scrollTo({ top: 0, behavior: "instant" });
+        });
+      })();
+    </script>
   </body>
 </html>

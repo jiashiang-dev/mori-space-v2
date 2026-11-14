@@ -19,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  MORI_EXPECTED_TREE: 'd300e34ff6fd9668a2b5ce6a3e6d5e4bf453929c0e3b942b174661901f093113'
+  MORI_EXPECTED_TREE: '9cdbcab98823306f728c22977f0cad0b53b7349d5b876279dd0084b0f321cb8b'
 
 jobs:
   verify:
@@ -55,7 +55,7 @@ jobs:
       - name: Verify the release verifier and exact Variant C bytes
         shell: bash
         run: |
-          printf '%s\n' 'ef3402c67f58631f96368f3be576fa83d34c036bee763a4627403b12342441b0  release/verify-pages-artifact.mjs' | sha256sum --check --strict
+          printf '%s\n' 'eeea4296d31209bdf35b86a75085cfeb88513b8a17b87ad716d7ac9b99fcc15c  release/verify-pages-artifact.mjs' | sha256sum --check --strict
           node release/verify-pages-artifact.mjs pages-artifact release/pages-artifact.inventory.json
       - name: Upload only the verified Variant C root
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
